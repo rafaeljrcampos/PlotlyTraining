@@ -84,7 +84,7 @@ def atualizar_grafico(tipo_grafico, max_valor):
     elif tipo_grafico == "scatter":
         fig = go.Figure(data=go.Scatter(x=x, y=y, mode="markers", marker=dict(color="#ffc547", size=10)))
     elif tipo_grafico =='indicator':
-        fig = go.Figure(go.Indicator(mode="gauge+number",value= random.uniform(1, max_valor),title={'text': "Indicador"},gauge={'axis': {'range': [0, max_valor]},'bar': {'color': "#ffc547"}}))
+        fig = go.Figure(go.Indicator(mode="gauge+number",value= random.uniform(1, max_valor),title={'text': "Indicador"},gauge={'axis': {'range': [0, max_valor]},'bar': {'color': "#ffc547"}, 'threshold' : {'line': {'color': "#FF6347", 'width': 4}, 'thickness': 0.75, 'value':max_valor/2}}))
     elif tipo_grafico =='indicatortwo':
         fig = go.Figure(go.Indicator(mode="number+gauge+delta", gauge={'shape': "bullet", 'axis': {'range': [0, max_valor]}, 'bar': {'color': "#ffc547"}},delta={'reference': 300,'increasing':{'color': "#ffc547"},'decreasing':{'color': "#FF6347"}},value=random.uniform(0, max_valor)))
     else:
