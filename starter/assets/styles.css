@@ -1,0 +1,29 @@
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.dash-dropdown {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    color: #1e1e1e;
+}
+
+.dash-slider {
+    background-color: #1e1e1e;
+}
+.rc-slider-handle {
+    border-color: #ffc547; 
+}
+.rc-slider-track {
+    background-color: #ffc547; 
+}
+.graph-container {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 10px;
+}
